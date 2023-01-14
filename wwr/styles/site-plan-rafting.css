@@ -9,7 +9,7 @@ Fonts are separated by a & */
   --primary-color: #FFFFFF   ;
   --secondary-color: #25283D ;
   --accent1-color: #7C7C7C;
-  --accent2-color: white;
+  --accent2-color: #000;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Montserrat";
@@ -19,7 +19,7 @@ Fonts are separated by a & */
   --headline-color-on-white: #25283D;  /* headlines on a white background */ 
   --headline-color-on-color: #25283d; /* headlines on a colored background */ 
   --paragraph-color-on-white: #25293D; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-color-on-color: #7c7c7c; /* paragraph text on a colored background */ 
   --paragraph-background-color: #25283D  ;
   --nav-link-color: #7c7c7c;
   --nav-background-color: #25283D;
