@@ -17,10 +17,10 @@ Fonts are separated by a & */
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #25283D;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --headline-color-on-color: #25283d; /* headlines on a colored background */ 
   --paragraph-color-on-white: #25293D; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #FFFFFF  ;
+  --paragraph-background-color: #25283D  ;
   --nav-link-color: #7c7c7c;
   --nav-background-color: #25283D;
   --nav-hover-link-color: white;
