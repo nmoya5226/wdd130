@@ -38,6 +38,7 @@ nav a:hover {
 .book:hover, .join:hover {
     background-color: black;
     color: white;
+    text-align: center;
 }
 #background {
     background-color: antiquewhite;
