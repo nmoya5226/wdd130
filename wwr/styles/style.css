@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
+
 content {
     max-width:1600px;
     margin: 0 auto;
@@ -6,12 +8,16 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
 }
 .button-box {
     text-align: center;
+}
+main section img {
+    box-sizing: border-box;
 }
 main section {
     text-align: center;
@@ -21,6 +27,9 @@ main section {
 }
 body {
     background-color: antiquewhite;
+    font-family: 'Roboto Slab', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: rgba(37,41,88,1);
@@ -34,6 +43,10 @@ nav a:hover {
     color: white;
     text-decoration: none;
     text-align: center;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: black;
@@ -45,16 +58,23 @@ nav a:hover {
 }
 .msg {
     background-color: antiquewhite;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: black;
+    font-family: 'Montserrat', Helvetica, sans-serif;
 }
 .msg p {
     color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color:rgba(37,41,88,1);
     color:white;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     color: white;
@@ -71,6 +91,9 @@ footer p a:hover{
 }
 .home-title {
     color: black;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4 {
     color: black;
@@ -80,7 +103,23 @@ h4 {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
+}
+h2 {
+    margin: 0;
+}
+#logo_link {
+    padding-top: 5px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid black;
 }
