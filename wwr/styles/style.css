@@ -232,6 +232,15 @@ main h1 {
     background-color: rgba(37, 41, 88,1);
     color: white;
 }
+main h2 {
+    text-align: center;
+}
+main p {
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-size-adjust: 100px;
+}
 main img {
     float: right;
 }
