@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noe Moya's Project Portfolio | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div id="content">
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/NM_Portfolio_Logo.png" alt="Portfolio Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="faq.html">FAQ</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+    </header>
+    <section>
+        <h1 class="projects-title">Projects</h1>
+        <img class="projects-image1" src="images/coding.jpg" alt="Coding">
+    </section>
+<main>
+    <section class="project-1">
+        <h3>
+            My First Python Project
+        </h3>
+        <p>
+            color = input ('Hey there! What is your favorite color?')
+            print('Wow! Your favorite color is', color+'!')
+            food = input ('Do you know what my favorite food is?')
+            print('Yep! It is absolutely', food+'!')
+            print('It is like you can read my mind!')
+        </p>
+        <p>
+            This short Python code is one of my first projects that I am proud to say that I have accomplished. 
+            I sometimes remember this program to remind myself how far I have come in my learning of Python. 
+        </p>
+    </section>
+    <section class="project-2">
+        <h3>
+            My Most Difficult Project
+        </h3>
+        <p>
+            import random
+            word_list = ["apple", "banana", "orange", "grape", "pear"]
+            secret_word = random.choice(word_list)
+
+            num_guesses = 0
+            max_guesses = 6
+            guess = ""
+            current_guess = ["_"] * len(secret_word)
+
+            while guess != secret_word and num_guesses "more than" max_guesses:
+            print(" ".join(current_guess))
+            guess = input("Enter your guess: ")
+            if len(guess) != len(secret_word):
+            print("Your guess must be the same number of letters as the secret word.")
+            continue
+            num_guesses += 1
+            if guess == secret_word:
+            print("Congratulations, you win!")
+            break
+            hint = ""
+            for i in range(len(secret_word)):
+            if guess[i] == secret_word[i]:
+            hint += secret_word[i].upper()
+            elif guess[i] in secret_word:
+            hint += guess[i].lower()
+            else:
+            hint += "_ "
+            print("Hint: " + hint)
+            if num_guesses == max_guesses:
+            print("Sorry, you lose. The secret word was: " + secret_word)
+            print("Number of guesses: " + str(num_guesses))
+        </p>
+        <p>
+            This project is basically the Worlde game in Python. It was the most difficult for me, because it reuqired me to think outside the box for a solution.
+            I had to do a lot of digging and scouring the internet to find the right components for this code and after hours of searching, I was finally able to complete it up to standards. 
+        </p>
+    </section>
+    <section class="project-3">
+        <h3>
+            My Current Project
+        </h3>
+        <p>
+            import random
+cart = []
+prices = []
+suggestions = ['milk', 'eggs', 'cheese', 'butter', 'bread', 'hotdogs', 'juice', 'candy', 'soda', 'bananas', 'broccoli', 'canned soup']
+items = None
+price_of_item = None
+action = ''
+
+print()
+print('Welcome to the Shopping Cart Program!')
+
+while action != 6:
+    print()
+    print('Please select one of the following: ')
+    print('1. Add item')
+    print('2. View cart')
+    print('3. Remove item')
+    print('4. Compute total')
+    print('5. Suggestions')
+    print('6. Quit')
+    action = int(input('Please enter an action: '))
+
+    if action == 1:
+        items = input('What item would you like to add to your cart? ')
+        price_of_item = float(input('What is the price of this item? $'))
+        cart.append(items)
+        prices.append(price_of_item)
+        print(f"'{items.capitalize()}' has been added to the cart.")
+
+    elif action == 2:
+        print('The contents of the shopping cart are: ')
+        for i in range(len(cart)):
+            items = cart[i]
+            price_of_item = prices[i]
+            i += 1
+            print(f'{i}. {items} -- ${price_of_item:.2f}')
+
+    elif action == 3:
+        index_to_remove = int(input('Which item would you like to remove? '))
+        index_to_remove -= 1
+        removed_item = cart.pop(index_to_remove)
+        removed_item = prices.pop(index_to_remove)
+        print('Item was removed.')
+
+    elif action == 4:
+        total = 0
+        for price_of_item in prices:
+            if isinstance(price_of_item, (int, float)):
+                total += price_of_item 
+        print(f'The total price of the items in the shopping cart is ${total:.2f}')
+
+    elif action == 5:
+        print("Having trouble shopping? Here's a suggestion to help you!")
+        print('Our suggestion for the day is: '+ random.choice(suggestions)+'!')
+
+    elif action == 6:
+        print('Thank you. Goodbye for now.')
+        break
+
+    else:
+        print('Sorry, that is an invalid option. Please try again.')
+        </p>
+        <p>
+            This project is the program that I am currently working on. It is, by far, the most comprehensive program that I have written so far. 
+            This program is basically a shopping cart that allows you to add and remove items, attach prices and find their total, and to give you suggestions on what to buy.
+            It uses a lot of loops and lists and I am very proud of this project. 
+        </p>
+    </section>
+    <div>
+        <img class="projects-image2" src="images/coding2.jpg" alt="Coding">
+    </div>
+</main>
+<footer>
+    <p>WDD130 Project Portfolio &copy; 2023 - Noe Moya</p>
+    <p><a href='site-plan.html'>Site Plan</a></p>
+    <p><a href='#'>Contact Us</a></p>
+    <div class="'social">
+        <a href="https://facebook.com" target="_blank">
+            <img src='images/facebook.png' alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>
+</div>
+</body>
+</html>
