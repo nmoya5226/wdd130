@@ -150,7 +150,8 @@ footer p a:hover{
     text-align: center;
     margin: 50px 300px;
     background-color: #BA3F1D;
-    color: white
+    color: white;
+    font-family: 'Archivo', 'Verdana', sans-serif;
   }
   .projects-image1 {
     display: block;
@@ -164,7 +165,8 @@ footer p a:hover{
     text-align: center;
     background-color: #BA3F1D;
     color: white;
-    margin: 50px 500px
+    margin: 50px 500px;
+    font-family: 'Archivo', 'Verdana', sans-serif;
   }
   .project-1 p {
     text-align: center;
@@ -178,7 +180,8 @@ footer p a:hover{
     text-align: center;
     background-color: #BA3F1D;
     color: white;
-    margin: 50px 500px
+    margin: 50px 500px;
+    font-family: 'Archivo', 'Verdana', sans-serif;
   }
   .project-2 p:nth-child(2) {
     font-weight: bold;
@@ -192,7 +195,8 @@ footer p a:hover{
     text-align: center;
     background-color: #BA3F1D;
     color: white;
-    margin: 50px 500px
+    margin: 50px 500px;
+    font-family: 'Archivo', 'Verdana', sans-serif;
   }
   .project-3 p {
     text-align: center;
